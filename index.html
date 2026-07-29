@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDE Prosperity LLC — SBA-Certified WOSB · EDWOSB | Engineering, IT & Management Services</title>
+<meta name="description" content="CDE Prosperity LLC — SBA-certified WOSB &amp; EDWOSB delivering engineering services (NAICS 541330), IT solutions (541519), and management consulting (541611) to federal agencies and prime contractors. UEI SJHNYDQL94Q7 · CAGE 9UFN5 · SAM.gov Active.">
+<link rel="canonical" href="https://www.cdeprosperity.com/">
+<meta property="og:title" content="CDE Prosperity LLC — SBA-Certified WOSB · EDWOSB">
+<meta property="og:description" content="Engineering, IT &amp; management services for federal missions. Set-aside eligible. SAM.gov active.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cdeprosperity.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b1d33'/%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%23b08d3e' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='26' font-weight='bold' fill='%23f7f5f0' text-anchor='middle'%3ECP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0b1d33;
+    --ink-2: #14304f;
+    --ink-3: #1e4066;
+    --paper: #f7f5f0;
+    --paper-2: #efece4;
+    --brass: #b08d3e;
+    --brass-2: #c9a961;
+    --red: #9c2b2e;
+    --line: rgba(11, 29, 51, 0.16);
+    --line-strong: rgba(11, 29, 51, 0.35);
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Public Sans", "Segoe UI", Helvetica, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+
+  /* ============ TOP GOVERNMENT DATA BAR ============ */
+  .databar {
+    background: var(--ink);
+    color: rgba(247, 245, 240, 0.9);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+  .databar .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 28px;
+    padding: 8px 32px;
+    align-items: center;
+  }
+  .databar b { color: var(--brass-2); font-weight: 600; margin-right: 5px; }
+  .databar .dot-active { color: #7fc98a; }
+  .databar .spacer { flex: 1; }
+
+  /* ============ NAV ============ */
+  header.nav {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.nav .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 18px; padding-bottom: 18px;
+  }
+  .logo { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); }
+  .logo-mark {
+    width: 44px; height: 44px; border: 1.5px solid var(--ink);
+    display: grid; place-items: center;
+    font-family: var(--serif); font-weight: 700; font-size: 15px;
+    letter-spacing: 0.02em; position: relative;
+  }
+  .logo-mark::after {
+    content: ""; position: absolute; inset: 3px;
+    border: 1px solid var(--brass);
+  }
+  .logo-text { line-height: 1.15; }
+  .logo-text .name { font-family: var(--serif); font-weight: 700; font-size: 19px; letter-spacing: 0.01em; }
+  .logo-text .tag { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--brass); font-weight: 600; }
+  nav.links { display: flex; gap: 32px; align-items: center; }
+  nav.links a {
+    color: var(--ink); text-decoration: none; font-size: 13.5px; font-weight: 500;
+    letter-spacing: 0.03em; padding-bottom: 3px; border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  nav.links a:hover { border-bottom-color: var(--brass); }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 600; font-size: 13.5px;
+    letter-spacing: 0.05em; padding: 12px 26px; transition: all 0.22s ease;
+    border: 1.5px solid var(--ink); color: var(--ink); background: transparent;
+    text-transform: uppercase;
+  }
+  .btn:hover { background: var(--ink); color: var(--paper); }
+  .btn.solid { background: var(--ink); color: var(--paper); }
+  .btn.solid:hover { background: var(--ink-3); border-color: var(--ink-3); }
+  .btn.brass { border-color: var(--brass); color: var(--brass); }
+  .btn.brass:hover { background: var(--brass); color: var(--paper); }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    background:
+      linear-gradient(rgba(11,29,51,0.94), rgba(11,29,51,0.97)),
+      repeating-linear-gradient(45deg, transparent 0 34px, rgba(176,141,62,0.5) 34px 35px);
+    background-color: var(--ink);
+    color: var(--paper);
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 85% 20%, rgba(176,141,62,0.14), transparent 60%);
+    pointer-events: none;
+  }
+  .hero .wrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.35fr 0.85fr;
+    gap: 64px;
+    padding-top: 88px;
+    padding-bottom: 96px;
+    align-items: center;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 11.5px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.24em; color: var(--brass-2);
+    margin-bottom: 24px;
+  }
+  .eyebrow::before { content: ""; width: 34px; height: 1px; background: var(--brass); }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(34px, 4.6vw, 54px);
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -0.01em;
+    margin-bottom: 22px;
+  }
+  .hero h1 em { font-style: normal; color: var(--brass-2); }
+  .hero p.lede {
+    font-size: 17px; font-weight: 300; color: rgba(247,245,240,0.82);
+    max-width: 54ch; margin-bottom: 36px;
+  }
+  .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero .btn { border-color: rgba(247,245,240,0.6); color: var(--paper); }
+  .hero .btn:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+  .hero .btn.gold { background: var(--brass); border-color: var(--brass); color: var(--ink); }
+  .hero .btn.gold:hover { background: var(--brass-2); border-color: var(--brass-2); }
+
+  /* Capability card in hero */
+  .idcard {
+    background: var(--paper);
+    color: var(--ink);
+    padding: 30px 30px 24px;
+    position: relative;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+  }
+  .idcard::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, var(--red) 0 33.3%, var(--paper) 33.3% 66.6%, var(--ink-3) 66.6% 100%);
+  }
+  .idcard h3 {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.22em;
+    color: var(--brass); font-weight: 700; margin-bottom: 18px;
+  }
+  .idrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 9px 0; border-bottom: 1px dotted var(--line-strong);
+    font-size: 13.5px;
+  }
+  .idrow:last-of-type { border-bottom: none; }
+  .idrow .k { color: rgba(11,29,51,0.6); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+  .idrow .v { font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+  .idrow .v.mono { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 13px; }
+  .idcard .foot {
+    margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-size: 11px; color: rgba(11,29,51,0.55); letter-spacing: 0.04em;
+    display: flex; justify-content: space-between;
+  }
+  .badge-active {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: #1c6b34; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .badge-active::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #2e8b47; }
+
+  /* ============ CERT STRIP ============ */
+  .certstrip { background: var(--paper-2); border-bottom: 1px solid var(--line); }
+  .certstrip .wrap {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+    gap: 14px 44px; padding-top: 26px; padding-bottom: 26px;
+  }
+  .cert {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 12.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .cert .seal {
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 1.5px solid var(--brass); display: grid; place-items: center;
+    font-family: var(--serif); font-size: 10px; font-weight: 700; color: var(--brass);
+    position: relative;
+  }
+  .cert .seal::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; border: 1px dotted var(--brass); }
+  .cert small { display: block; font-weight: 400; font-size: 10.5px; letter-spacing: 0.04em; color: rgba(11,29,51,0.55); text-transform: none; }
+
+  /* ============ SECTIONS ============ */
+  section { padding: 88px 0; }
+  .sec-head { max-width: 640px; margin-bottom: 56px; }
+  .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .sec-head.center .eyebrow { justify-content: center; }
+  .sec-head .eyebrow { color: var(--brass); }
+  .sec-head .eyebrow::before { background: var(--brass); }
+  h2 {
+    font-family: var(--serif); font-size: clamp(28px, 3.4vw, 38px);
+    font-weight: 600; line-height: 1.2; letter-spacing: -0.01em;
+  }
+  .sec-head p { margin-top: 16px; color: rgba(11,29,51,0.7); font-size: 15.5px; }
+
+  /* Capabilities */
+  .caps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .cap {
+    background: var(--paper); padding: 40px 32px 36px;
+    transition: background 0.25s;
+    position: relative;
+  }
+  .cap:hover { background: #fdfcf9; }
+  .cap .naics {
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 12px; color: var(--brass); font-weight: 600; letter-spacing: 0.08em;
+    margin-bottom: 18px; display: block;
+  }
+  .cap h3 { font-family: var(--serif); font-size: 21px; font-weight: 600; margin-bottom: 14px; line-height: 1.3; }
+  .cap p { font-size: 14px; color: rgba(11,29,51,0.72); margin-bottom: 18px; }
+  .cap ul { list-style: none; }
+  .cap li {
+    font-size: 13.5px; padding: 7px 0 7px 22px; position: relative;
+    border-top: 1px dotted var(--line);
+  }
+  .cap li::before {
+    content: "—"; position: absolute; left: 0; color: var(--brass); font-weight: 600;
+  }
+
+  /* ============ SET-ASIDE BAND ============ */
+  .band {
+    background: var(--ink); color: var(--paper);
+    position: relative; overflow: hidden;
+  }
+  .band::before {
+    content: ""; position: absolute; inset: 0;
+    background: repeating-linear-gradient(-45deg, transparent 0 60px, rgba(176,141,62,0.07) 60px 61px);
+  }
+  .band .wrap { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .band h2 em { font-style: normal; color: var(--brass-2); }
+  .band p { color: rgba(247,245,240,0.78); font-size: 15px; margin-top: 16px; max-width: 50ch; }
+  .band .eyebrow { color: var(--brass-2); }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(247,245,240,0.18); border: 1px solid rgba(247,245,240,0.18); }
+  .stat { background: var(--ink); padding: 28px 26px; }
+  .stat .n { font-family: var(--serif); font-size: 30px; font-weight: 700; color: var(--brass-2); line-height: 1.1; }
+  .stat .l { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(247,245,240,0.65); margin-top: 8px; font-weight: 600; }
+
+  /* ============ NAICS TABLE ============ */
+  .naics-table { width: 100%; border-collapse: collapse; border: 1px solid var(--line); font-size: 14px; }
+  .naics-table th {
+    text-align: left; background: var(--ink); color: var(--paper);
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 600;
+    padding: 14px 20px;
+  }
+  .naics-table td { padding: 15px 20px; border-top: 1px solid var(--line); vertical-align: top; }
+  .naics-table tr:nth-child(even) td { background: rgba(11,29,51,0.025); }
+  .naics-table .code { font-family: ui-monospace, Consolas, monospace; font-weight: 600; letter-spacing: 0.04em; white-space: nowrap; }
+  .pill {
+    display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.1em; padding: 3px 10px; border: 1px solid var(--brass); color: var(--brass);
+    margin-left: 10px; vertical-align: middle;
+  }
+  .pill.green { border-color: #2e7d43; color: #2e7d43; }
+  .subnote { font-size: 12px; color: rgba(11,29,51,0.55); margin-top: 4px; }
+
+  /* ============ HOW WE ENGAGE ============ */
+  .engage { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; counter-reset: step; }
+  .step { position: relative; padding-top: 20px; }
+  .step::before {
+    counter-increment: step; content: "0" counter(step);
+    font-family: var(--serif); font-size: 52px; font-weight: 700;
+    color: transparent; -webkit-text-stroke: 1px var(--brass);
+    position: absolute; top: -14px; left: 0; line-height: 1;
+  }
+  .step h3 { font-family: var(--serif); font-size: 19px; margin: 34px 0 10px; }
+  .step p { font-size: 14px; color: rgba(11,29,51,0.72); }
+
+  /* ============ CONTACT ============ */
+  .contact { background: var(--paper-2); border-top: 1px solid var(--line); }
+  .contact .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+  .contact h2 { margin-bottom: 12px; }
+  .contact .sub { color: rgba(11,29,51,0.7); font-size: 15px; margin-bottom: 32px; max-width: 46ch; }
+  .vcard { border-left: 3px solid var(--brass); padding-left: 24px; margin-bottom: 28px; }
+  .vcard .who { font-family: var(--serif); font-size: 20px; font-weight: 600; }
+  .vcard .role { font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--brass); font-weight: 600; margin-bottom: 10px; }
+  .vcard a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--brass); }
+  .vcard .line { font-size: 14.5px; padding: 3px 0; }
+  form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  form label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; margin-bottom: 6px; color: rgba(11,29,51,0.7); }
+  form input, form textarea, form select {
+    width: 100%; padding: 12px 14px; font-family: var(--sans); font-size: 14px;
+    border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink);
+    margin-bottom: 18px;
+  }
+  form input:focus, form textarea:focus, form select:focus { outline: 2px solid var(--brass); outline-offset: -1px; }
+
+  /* ============ FOOTER ============ */
+  footer { background: var(--ink); color: rgba(247,245,240,0.75); font-size: 13px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding-top: 40px; padding-bottom: 40px; align-items: center; }
+  footer .fine { font-size: 11.5px; letter-spacing: 0.03em; color: rgba(247,245,240,0.5); }
+  footer b { color: var(--brass-2); }
+
+  /* Reveal animation */
+  .rv { opacity: 0; transform: translateY(18px); animation: rise 0.7s ease forwards; }
+  .rv.d1 { animation-delay: 0.08s; } .rv.d2 { animation-delay: 0.18s; } .rv.d3 { animation-delay: 0.3s; } .rv.d4 { animation-delay: 0.42s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  @media (max-width: 900px) {
+    .hero .wrap, .band .wrap, .contact .wrap { grid-template-columns: 1fr; gap: 40px; }
+    .caps, .engage { grid-template-columns: 1fr; }
+    nav.links { display: none; }
+    section { padding: 60px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Government data bar -->
+<div class="databar">
+  <div class="wrap">
+    <span><b>UEI</b> SJHNYDQL94Q7</span>
+    <span><b>CAGE</b> 9UFN5</span>
+    <span><b>SAM.gov</b> <span class="dot-active">● Active</span></span>
+    <span class="spacer"></span>
+    <span><b>NAICS</b> 541330 · 541519 · 541611</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#">
+      <span class="logo-mark">CP</span>
+      <span class="logo-text">
+        <span class="name">CDE Prosperity</span><br>
+        <span class="tag">WOSB · EDWOSB Certified</span>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#setaside">Set-Aside Advantage</a>
+      <a href="#naics">NAICS</a>
+      <a href="#engage">Working With Us</a>
+      <a href="#contact" class="btn brass" style="padding:10px 20px;">Capability Statement</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow rv">SBA-Certified Women-Owned Small Business</div>
+      <h1 class="rv d1">Engineering, IT &amp; management services — <em>built for federal missions.</em></h1>
+      <p class="lede rv d2">CDE Prosperity LLC is an SBA-certified WOSB and EDWOSB delivering engineering services, computer &amp; IT solutions, and administrative management consulting to federal agencies and prime contractors. Set-aside eligible. SAM.gov active. Ready to perform.</p>
+      <div class="hero-ctas rv d3">
+        <a class="btn gold" href="/CDE-Prosperity-Capability-Statement.pdf" target="_blank">Download Capability Statement</a>
+        <a class="btn" href="#capabilities">View Capabilities</a>
+      </div>
+    </div>
+    <aside class="idcard rv d4">
+      <h3>Contractor Identification</h3>
+      <div class="idrow"><span class="k">Legal Name</span><span class="v">CDE Prosperity LLC</span></div>
+      <div class="idrow"><span class="k">UEI</span><span class="v mono">SJHNYDQL94Q7</span></div>
+      <div class="idrow"><span class="k">CAGE Code</span><span class="v mono">9UFN5</span></div>
+      <div class="idrow"><span class="k">Primary NAICS</span><span class="v mono">541330</span></div>
+      <div class="idrow"><span class="k">Established</span><span class="v">2024</span></div>
+      <div class="idrow"><span class="k">Location</span><span class="v">Tooele, Utah (UT-02)</span></div>
+      <div class="foot">
+        <span class="badge-active">SAM.gov Active</span>
+        <span>Verified 10/2025</span>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- Certification strip -->
+<div class="certstrip">
+  <div class="wrap">
+    <div class="cert"><span class="seal">SBA</span><span>WOSB Certified<small>SBA · Since Oct 2024</small></span></div>
+    <div class="cert"><span class="seal">SBA</span><span>EDWOSB Certified<small>SBA · Since Oct 2024</small></span></div>
+    <div class="cert"><span class="seal">SDB</span><span>Small Disadvantaged<small>Self-certified</small></span></div>
+    <div class="cert"><span class="seal">MBE</span><span>Minority-Owned<small>Asian-Pacific American</small></span></div>
+  </div>
+</div>
+
+<!-- Capabilities -->
+<section id="capabilities">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Core Capabilities</div>
+      <h2>Three service lines. One accountable partner.</h2>
+      <p>Registered and small in every NAICS code we hold — including the military &amp; aerospace, energy, and marine engineering size-standard exceptions under 541330.</p>
+    </div>
+    <div class="caps">
+      <div class="cap">
+        <span class="naics">NAICS 541330 — PRIMARY</span>
+        <h3>Engineering Services</h3>
+        <p>Engineering support across the disciplines federal programs demand — from systems documentation to specialized technical analysis.</p>
+        <ul>
+          <li>Military &amp; aerospace equipment support</li>
+          <li>Energy-program engineering (EPAct 1992)</li>
+          <li>Marine engineering &amp; naval architecture</li>
+          <li>Technical documentation &amp; analysis</li>
+        </ul>
+      </div>
+      <div class="cap">
+        <span class="naics">NAICS 541519</span>
+        <h3>Computer &amp; IT Services</h3>
+        <p>Software, systems, and IT support services — including value-added reseller capability under the ITVAR exception.</p>
+        <ul>
+          <li>Software solutions &amp; automation</li>
+          <li>IT support &amp; systems integration</li>
+          <li>IT value-added resale (ITVAR)</li>
+          <li>Data &amp; workflow tooling</li>
+        </ul>
+      </div>
+      <div class="cap">
+        <span class="naics">NAICS 541611</span>
+        <h3>Management Consulting</h3>
+        <p>Administrative and general management consulting that keeps programs organized, compliant, and on schedule.</p>
+        <ul>
+          <li>Administrative management services</li>
+          <li>Program &amp; process support</li>
+          <li>Business operations consulting</li>
+          <li>Compliance &amp; reporting support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Set-aside band -->
+<div class="band" id="setaside">
+  <section>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">The Set-Aside Advantage</div>
+      <h2>Meet your WOSB goals with a <em>certified, ready</em> partner.</h2>
+      <p>Federal agencies are statutorily required to direct 5% of prime contracting dollars to women-owned small businesses. CDE Prosperity holds both WOSB and EDWOSB certifications from the SBA — making us eligible for WOSB/EDWOSB set-asides and sole-source awards in designated NAICS codes.</p>
+      <p style="margin-top:12px;">Primes: partnering with CDE Prosperity strengthens your small business subcontracting plan across multiple socioeconomic categories at once.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">WOSB</div><div class="l">SBA Certified — not just self-attested</div></div>
+      <div class="stat"><div class="n">EDWOSB</div><div class="l">Sole-source eligible in designated NAICS</div></div>
+      <div class="stat"><div class="n">7</div><div class="l">NAICS registrations, small in all</div></div>
+      <div class="stat"><div class="n">4+</div><div class="l">Socioeconomic categories for subcontracting credit</div></div>
+    </div>
+  </div>
+  </section>
+</div>
+
+<!-- NAICS table -->
+<section id="naics">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Registrations</div>
+      <h2>NAICS codes &amp; size standards</h2>
+    </div>
+    <table class="naics-table">
+      <thead>
+        <tr><th>Code</th><th>Description</th><th>Small Business</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="code">541330 <span class="pill">Primary</span></td>
+          <td>Engineering Services
+            <div class="subnote">Incl. exceptions: Military &amp; Aerospace Equipment · EPAct 1992 Energy Contracts · Marine Engineering &amp; Naval Architecture</div>
+          </td>
+          <td><span class="pill green">Yes</span></td>
+        </tr>
+        <tr>
+          <td class="code">541519</td>
+          <td>Other Computer Related Services
+            <div class="subnote">Incl. exception: Information Technology Value Added Resellers (ITVAR)</div>
+          </td>
+          <td><span class="pill green">Yes</span></td>
+        </tr>
+        <tr>
+          <td class="code">541611</td>
+          <td>Administrative Management &amp; General Management Consulting Services</td>
+          <td><span class="pill green">Yes</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- How we engage -->
+<section id="engage" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Working With Us</div>
+      <h2>Three ways to engage</h2>
+    </div>
+    <div class="engage">
+      <div class="step">
+        <h3>Prime Contracts</h3>
+        <p>WOSB/EDWOSB set-asides and sole-source awards, simplified acquisitions, and micro-purchases in our NAICS codes.</p>
+      </div>
+      <div class="step">
+        <h3>Subcontracting &amp; Teaming</h3>
+        <p>Task-order support and teaming agreements with primes who need certified small business participation with real delivery capability.</p>
+      </div>
+      <div class="step">
+        <h3>Sources Sought Responses</h3>
+        <p>We respond to sources sought notices and RFIs — helping contracting officers justify small business set-asides with market research.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<div class="contact" id="contact">
+  <section>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:var(--brass);">Contact</div>
+      <h2>Let's talk about your requirement.</h2>
+      <p class="sub">Request our capability statement, discuss a teaming opportunity, or send a sources sought notice. We respond within one business day.</p>
+      <div class="vcard">
+        <div class="role">Point of Contact</div>
+        <div class="who">Charya Harrison</div>
+        <div class="line">Owner / CEO</div>
+        <div class="line"><a href="mailto:contact@cdeprosperity.com">contact@cdeprosperity.com</a></div>
+        <div class="line"><a href="tel:+13852148154">(385) 214-8154</a></div>
+        <div class="line">8469 N Iron Horse Dr, Tooele, UT 84074</div>
+      </div>
+      <a class="btn solid" href="/CDE-Prosperity-Capability-Statement.pdf" target="_blank">Download Capability Statement (PDF)</a>
+    </div>
+    <div>
+      <form onsubmit="return false;">
+        <div class="row">
+          <div><label>Name</label><input type="text" placeholder="Full name"></div>
+          <div><label>Organization</label><input type="text" placeholder="Agency or company"></div>
+        </div>
+        <div class="row">
+          <div><label>Email</label><input type="email" placeholder="you@agency.gov"></div>
+          <div><label>Inquiry Type</label>
+            <select>
+              <option>Capability statement request</option>
+              <option>Sources sought / RFI</option>
+              <option>Teaming / subcontracting</option>
+              <option>Contract opportunity</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <label>Message</label>
+        <textarea rows="5" placeholder="Tell us about the requirement, solicitation number, or opportunity…"></textarea>
+        <button class="btn solid" type="submit" style="cursor:pointer;">Send Inquiry</button>
+      </form>
+    </div>
+  </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div>
+      <b>CDE Prosperity LLC</b> — Tooele, Utah · Est. 2024<br>
+      <span class="fine">UEI SJHNYDQL94Q7 · CAGE 9UFN5 · SAM.gov Active · WOSB · EDWOSB</span>
+    </div>
+    <div class="fine">© 2026 CDE Prosperity LLC. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
